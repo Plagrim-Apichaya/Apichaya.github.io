@@ -18,11 +18,11 @@
 <script src='https://code.jquery.com/jquery-1.11.0.min.js'></script>
 <script>
 L.mapbox.accessToken = 'pk.eyJ1IjoicGxhZ3JpbSIsImEiOiJja3pkNHZ0NTEydWdjMnVueDJuNDkza2ozIn0.LXogQBOOqA0Gosr5fxN98A';
-var url = 'https://api.github.com/repos/mapbox/mapbox.js/contents/test/manual/example.geojson';
+var url = 'https://api.github.com/repos/mapbox/mapbox.js/contents/test/manual/example.geojson'; ** write geojson 
 
 var map = L.mapbox.map('map')
-  .setView([0.3941, -78.2227], 7)
-  .addLayer(L.mapbox.styleLayer('mapbox://styles/mapbox/streets-v11'));
+  .setView([16.459,105.183], 4.35)
+  .addLayer(L.mapbox.styleLayer('mapbox://styles/plagrim/cl34r6rov008314o86x27qf91'));
 
 function load() {
   // Fetch just the contents of a .geojson file from GitHub by passing
