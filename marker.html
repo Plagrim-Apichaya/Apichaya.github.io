@@ -19,6 +19,22 @@
         bottom: 0;
         width: 100%;
       }
+      .marker {
+  background-image: url('plagrim-Apichaya.github.io/image/red_icon_location.png'); // img url in github
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+      .mapboxgl-popup {
+  max-width: 200px;
+}
+
+.mapboxgl-popup-content {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
     </style>
 </head>
 <body>
@@ -44,11 +60,11 @@ const geojson = {
       type: 'Feature',
       geometry: {
         type: 'Point',
-        coordinates: [-77.032, 38.913]
+        coordinates: [-77.032, 38.913] // 12°29'41.74"N 104°27'46.80"E
       },
       properties: {
         title: 'Mapbox',
-        description: 'Washington, D.C.'
+        description: 'Washington, D.C.' //Kampong Preach Village Chief House
       }
     },
     {
@@ -64,7 +80,28 @@ const geojson = {
     }
   ]
 };
-</script>
+
+    // add markers to map
+for (const feature of geojson.features) {
+  // create a HTML element for each feature
+  const el = document.createElement('div');
+  el.className = 'marker';
+
+  // make a marker for each feature and add to the map
+  new mapboxgl.Marker(el).setLngLat(feature.geometry.coordinates).addTo(map);
+}
+    
+    new mapboxgl.Marker(el)
+  .setLngLat(feature.geometry.coordinates)
+  .setPopup(
+    new mapboxgl.Popup({ offset: 25 }) // add popups
+      .setHTML(
+        `<h3>${feature.properties.title}</h3><p>${feature.properties.description}</p>`
+      )
+  )
+  .addTo(map);
+    
+    </script>
 
 </body>
 </html>
