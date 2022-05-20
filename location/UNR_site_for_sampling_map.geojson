@@ -1,0 +1,15 @@
+{
+"type": "FeatureCollection",
+"name": "UNR site for sampling map",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "Name": "Ou Ta Prok village ", "description": null }, "geometry": { "type": "Point", "coordinates": [ 104.1133, 12.57883 ] } },
+{ "type": "Feature", "properties": { "Name": "Doun Sdaeung", "description": null }, "geometry": { "type": "Point", "coordinates": [ 104.283762, 12.7764707 ] } },
+{ "type": "Feature", "properties": { "Name": "Pov Veuy village", "description": null }, "geometry": { "type": "Point", "coordinates": [ 104.3153107, 12.8682283 ] } },
+{ "type": "Feature", "properties": { "Name": "Peacha Krey village", "description": null }, "geometry": { "type": "Point", "coordinates": [ 104.2205057, 12.7843293 ] } },
+{ "type": "Feature", "properties": { "Name": "Srey Chak Village", "description": null }, "geometry": { "type": "Point", "coordinates": [ 104.1133422, 12.69062 ] } },
+{ "type": "Feature", "properties": { "Name": "Anglong Reang Village", "description": null }, "geometry": { "type": "Point", "coordinates": [ 104.1470378, 12.6587528 ] } },
+{ "type": "Feature", "properties": { "Name": "Kampong Prak Village", "description": null }, "geometry": { "type": "Point", "coordinates": [ 104.1853116, 12.6019227 ] } },
+{ "type": "Feature", "properties": { "Name": "Peam Bang Village", "description": null }, "geometry": { "type": "Point", "coordinates": [ 104.2534652, 12.7392818 ] } }
+]
+}
